@@ -28,7 +28,8 @@ module Pronto
           match = /.*#{host}(:|\/)(?<slug>.*).git/.match(url)
           match[:slug] if match
         end.compact.first
-        URI.escape(slug, '/') if slug
+        puts slug
+        # URI.escape(slug, '/') if slug
       end
     end
 
