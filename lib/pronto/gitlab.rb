@@ -29,6 +29,7 @@ module Pronto
           match[:slug] if match
         end.compact.first
         puts slug
+        slug
         # URI.escape(slug, '/') if slug
       end
     end
